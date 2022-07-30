@@ -1,0 +1,247 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* background: linear-gradient(#df8f21ee,#f8d53b,#9b5a00); */
+            min-height: 100vh;
+            font-family: "Cairo", sans-serif;
+        }   
+
+        .wrapper{
+            max-width: 100%;
+            min-height: 100vh;
+            /* background-image: url("img3.jpg"); */
+            background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('imgbg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .heading{
+            padding: 10px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        .heading i{
+            color: #ff0;
+        }
+
+        .heading h2{
+            color: #18ccae;
+            font-size: 50px;
+            margin-top: 1rem;
+            font-family: "Impact", fantasy,monospace;
+            background-color: black;
+        }
+
+        header h3{
+            font-family: "Otomanopee One", sans-serif;
+        }
+        
+
+         form{
+            min-height: 25vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form button{
+            padding: 0.55rem;
+            font-size: 1.5rem;  
+            background-color: white;
+            border: none;
+        }
+
+        form button{
+            color: black;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        form button:hover{
+            color: black;
+            background: #cfccca;
+        }
+
+        .container{
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .List{
+            padding: 0;
+            min-width: 30%;
+            list-style: none;
+        }
+
+        .toDo{
+            margin-bottom: 2rem;
+            padding: 0 0.25rem;
+            margin: 0.15rem;
+            background: white;
+            color: black;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+
+         .low{
+            background: #0f0;
+        }
+
+         .medium{
+            background: #ffbf00;
+        }
+
+        .high{
+            background: #f00;
+        }
+
+        .toDo li{
+            flex: 1;
+        }
+
+        .complete-button, .delete-button{
+            border: none;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .delete-button{
+            color: black;
+        }
+
+        .complete-button{
+            color: white;
+            background-color: #00f;
+        }
+
+        .toDo-Item{
+            padding: 0 0.5rem;
+        }
+
+        .fa-check, .fa-trash{
+            pointer-events: none;
+        }
+
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+
+        .deleteAnim{
+            transform: translateY(80vh) rotateZ(30deg);
+            opacity: 0.4;
+        }
+
+        .filter-buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .filter-heading h2{
+            color: #ffbf00;
+            font-size: 40px;
+            margin-top: 1.5rem;
+            font-family: "Impact", fantasy,monospace;
+            
+        }
+
+        .low-button, .medium-button, .high-button, .all-tasks, .completed-btn{
+            display: flex;
+            margin-bottom: 4rem;  
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Otomanopee One", sans-serif;
+        }
+
+
+        .all-tasks:hover{
+            color: #fff;
+           background-color: #00f;
+        }
+
+        .completed-btn:hover{
+            color: #fff;
+           background-color: #f0f;
+        }
+
+       .low-button:hover{
+           color: #fff;
+           background-color: #0f0;
+       }
+
+       .medium-button:hover{
+        color: #fff;
+        background-color: #ffbf00;
+     }
+
+        .high-button:hover{
+        color: #fff ;
+        background-color: red;
+        }
+
+        select{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            outline: none;
+            border: none;
+        }
+
+        .select{
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        select{
+            cursor: pointer;
+            width: 8rem;
+            padding: 0.92rem;
+        }
+
+        .select::after{
+            background: #ff0;
+            color: black;
+            content: "\25BC";
+            position: absolute;
+            top: -4px;
+            right: 0;
+            padding: 1rem;
+            pointer-events: none;
+        }
+
+        .select:hover::after{
+            background: #cfccca;  
+        }
+
+
+        footer{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            font-family: "Otomanopee One", sans-serif;
+        }
